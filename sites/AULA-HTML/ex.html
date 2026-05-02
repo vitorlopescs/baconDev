@@ -1,0 +1,140 @@
+﻿<!DOCTYPE html> <!--eh pra dizer pro meu navegador que o meu documento eh do tipo html -->
+<html lang="en"> <!--Vou colocar todo o meu conteudo html dentro aq dessa tag "<html></html>
+                     obs1: quando eu gito "html" já vai aparacer algumas opções. Escolhendo a opcao "html 5" (q eh a q geralmente usamos) o meu arquivo de texto ja vai ficar com um codigo formatadinho nesse estilo aqui.
+                     obs2: jah esse atributo "Lang", que vem de "language"(ou seja, idioma), e ele por padrao vem em inglês "en". Então, se eu quiser ele em português sem precisar ter que traduzir lá no site mesmo, eu posso colocar "pt-br", que ai colocando esse atributo "Lang= "pt-br" na minha tag "html" eu já vou estar informando para o meu servidor que o idoma do meu site eh portugues br
+                    -->
+<head><!-- aqui eh o cabecalho. Tudo que eu colocar aq nao vai ser mostrado pro usuario. isso aqui soh vai ser lido pelo navegador/programa que ta lendo o meu site -->
+    <!--as meta tags sao meta dados que sao lidas somente pelo navegadores, e possuem algumas utilidades, como por exemplo para os mecasnismo de busca saberem palavras chaves do seu site, para vc dizer quem eh o autor, o tipo de codificacao de caracteres que a gente vai ta utilizando, o tipo de visualizacao de dispositivo que a gente quer q apareca, entre outras coisas-->
+    <meta charset="UTF-8"> <!-- essa meta tag serve para definir que os tipos dos caracteres q a gente ta usando sao do estilo de padronizacao UTF-8. Essa tag serve para dizer que o nosso programa vai ser compativel com alguns idiomas, entre eles o br, permitindo que a gente utilize acentuacao nas frases do programa sem que isso atrapalhe a formatacao, por exemplo -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- "viewport" quer dizer a area visivel da pagina. Quando a gente coloca essa tag "content="width=device-width" a gente ta dizendo q a tela vai se adaptar ao dispositivo da pessoa, e numa escala 1.0 (o zoom vai ser carregado de forma adequada) ", initial-scale=1.0"                                                                            
+                                                                                em suma, essa meta tag eh importante pra q o site fique com o formatinho certo para o celular-->
+    <title>Document</title> <!-- titulo do site-->
+</head>
+<body> <!-- eh onde a gente vai colocar o conteudo que realmente vai aparecer pros usuarios que vao estar acessando o meu site -->
+    
+</body>
+</html>
+
+<!-- 1)OUTRAS META TAGS IMPORTANTES QUE NAO VEM JUNTO COM A FORMATACAO PADRAO DE HTML-5: (COLOCALAS APÓS AS META TAGS PADROES QUE JA VEM)
+    a. <meta name="description" content="colocar aq a descricao do que eh o seu site">
+          . eh uma "descricao" do site, uma pequena sinopse que vai aparecer em baixo do titulo
+    b. <meta name="keywords" content="colocar aq as palavras chaves/termos q vc acha que uma pessoa pode usar quando estiver querendo procurar pelo site">
+          . define os temas, palavras chaves, do que o seu site se trata, para que o seu mecanismo de busca (google, etc.) consiga entender do que se trata o seu site. Quanto mais palavras chaves (mas que tenham haver com o seu site) voce colocar aqui, isso vai auxiliar para q o seu site seja bem rankeado no google
+          . hoje em dia essa tag nem eh tao utilizada mais pq o google, q eh a principal ferramenta de pesquisa do mundo, usa ia para analisar do que se trata seu site, da qualidade do conteudo e tals e montar a hierarquia de busca para a pesquisa do usuario em questao. Entao tb nem adianda colocar palavras chaves q nao estao relacionadas ao q de fato ah no seu site apenas para que ele aparece para as perquisas relacionadas a essa palavra, uma vez que o google analise se aquilo tem ou nao haver com o seu conteudo
+    c. <meta name="author" content="Vítor Lopes">
+          . serve pra informar o autor daquele site
+          . eh interessante colocar pq, a medida que vc vai fazendo vários sites na internet o google vai te conhecendo como autor. Se vc tem um site bem rankeado e ele vê que o autor eh aquela mesma pessoa que ele já tem registrado, isso pode até aumentar a sua "pontuação" no mecanismo de busca pq ele já te conhece como autor daqueles outros sites.
+-->
+
+<!-- 2)TAGS DE CABEÇALHO (TAGS DE TITULO) (COMEÇAM COM "h" e vão de "1 a 6") (esses títulos vão dos tópicos mais importantes, maiorzões no tamanho, para os menores e menos importantes (titulos e subtitulos, basicamente))
+    a. <h1>Titulo 1</h1> -> nunca se usa mais de um h1. Se você quer dois ou mais subtópicos de mesma importancia, você pode usar o h2 ou os demais mais de uma vez
+    b. <h2>Titulo 2</h2>
+    c. <h3>Titulo 3</h3>
+    d. <h4>Titulo 4</h4>
+    e. <h5>Titulo 5</h5>
+    f. <h6>Titulo 6</h6>
+
+    g. <p> Paragrafo </p>
+    h. <p> Lorem </p> -> esse aq escreve um paragrafo com um texto aleatorio em latim gerado automaticamente. Bom pra textar como ta ficando o site/formatação antes de preencher com texto real.
+-->
+
+<!-- 3)TAGS DE FORMATAÇÃO:
+    a. <b> NEGRITO </b>
+    b. <strong> tem sentido de dar enfase a algo (isso eh oq a maquina entende, pq visualmente pra nos nao vai ter diferença nenhuma para o negrito da tag b) </strong> -> ou seja, é um negrito mas com uma enfase
+    c. <hr> para colocar uma linha de divisão. Geralmente usamos para dividir seções <\hr>
+    d. <br> -> quebra linhas (diferente da tag <p> que é exclusivente para escrever algo em um novo paragrafo)
+    e. <i> italico </i>
+    f. <u> underline (sublinado) </u>
+    g. <small> deixar alguma coisa pequenininha </small> 
+    h. <del> deixe com um risco na palavra </del>
+    i. <sup> colocar algo acima (exponencial, por exemplo) </sup> 
+    j. <sub> colocar algo abaixo (faz o contrario do sup) </sub>
+    k. <mark> coloca uma marcação tipo "marca texto" na palavra </mark>
+-->>
+
+<!-- 4) TAGS DE CITAÇÃO: 
+    a. <abbr title ="Hyper Text Markup Language"> HTML </abbr>
+          .abbr = abreviação
+          . coloca a abreviação entre as tags abbr (no exemplo a cima era "HTML") e dentro da abertura da tag, após o abbs, eu posso colocar um "title" e então colocar a explicação/nome original daquela abreviação.
+          .além de ficar grifada com pausinhos, se você passar o mouse por cima da abreviação o site vai mostrar o nome completo dela
+    b. <address> Rua João Pedro da Silva, nº423, Bauxita </adress>
+          . serve para endereço fisico, endereço eletronico, telefone, rede social, etc.
+    c. <cite> Harry Potter </cite> 
+          . citação do titulo de alguma obra
+    d. <q> it s britney bitch </q> 
+          . quando quero indicar uma pequena citação de alguém
+    e. <blockquote> destacar uma citaçaõ dentro do texto </blockquote>
+    f. <bdo dir="rlt"> Vitor
+          . vai sair "rotiV"
+          . bdo inverte a ordem do texto "dir" indica a direcao, "rlt" éh "right to left" ou seja, indica para mudar a direção para ordem da direita para a esquerda agora. Mas da pra trocar para outras direções tb.
+-->
+
+<!-- LINK/CAMINHO ABSOLUTO (QUE É QUANDO EU COLOCO O CAMINHO COMPLETO DE UM SITE PARA ELE SER DIRECIONADO):  
+    <a href=""></a>
+          . tag "a", "href=" dai voce coloca o link em questão dentro de aspas, daí você fecha a primeira parte da tag, entre as tags você coloca o texto/oq vai representar/ser a parte clicavel do link para o usuario, e então fecha a tag 
+                - ex: <a href="https://google.com">Ir Para o Google</a>
+                . nesse exemplo, apareceria "Ir para o Google" em roxo e sublinhado para o meu usuário, e ao clicar ali o meu usuário seria direcionado para o google pelo endereço que eu indiquei ali para a linkagem.
+    -> do jeito que está no exemplo acima, a pessoa clica no link e o endereço do link abre no lugar da mesma página que a pessoa estava.
+    -> se você quer ao clicar no link abra numa nova aba você faz o seguinte:
+          . target="_blank" -> coloca isso antes de fechar a abertura da tag, depois das aspas com o endereço do link.
+                - ex: <a href="https://google.com" target="_blank">Ir Para o Google</a>
+                . agora sim, se a pessoa clica em "Ir para o Google" o meu site vai abrir a página do google em uma nova aba.       
+-->
+
+<!-- LINK/CAMINHO RELATIVO (QUE É QUANDO EU QUERO NAVEGAR ENTRE DOCUMENTOS/PASTAS DENTRO DO MEU PRÓPRIO PROJETO): 
+    <a href="pasta do navegador que ta o documento para onde quero ir/documento que eu quero ir.html" > nome clicavel no site </a>
+    -> se eu quero voltar uma pasta em relação ao documento que eu estou para acessar o documento linkavel em questão, eu tenho que coloca "../documento.html". Se o documento q eu quero ta duas pastas antes eu coloco "../../documento.html" e assim por diante
+    -> 
+-->
+
+<!-- TAGS DE IMAGENS:
+    <img src="">
+        -> ela nao tem fechamento, eh só isso ai mesmo
+        -> coloco a tag img e então src="" com o endereço da imagem que eu quero dentro das aspas.
+    -> mas só fazendo assim a imagem vai aparecer gigante no meu site
+    -> se eu quiser dimensionar eu uso width="300" -> to passando o tamanho de 300 pixels
+        ex.: <img src="link da imagem.jpg" width="300">
+    -> não é muito legal pegar imagem de sites de terceiro pq a imagem pode ficar quebrada facilmente la no site
+    -> pra pegar imagens eu posso acessar bancos de imagens gratuitos (ex.:pexels, freepik, etc.)
+    -> dai, baixando a imagem, eu posso acrescentar ela na pasta do meu projeto, ficando mais facil de linkar ela.
+
+-->
+
+<!-- TAGS DE TABELA:
+    <table> -> tag pra abrir tabela
+        <tr> -> linha 1 da tabela
+            <th>coluna 1 da tabela</th>
+            <th>coluna 2 da tabela</th>
+        </tr> fechando a primeira linha aq
+        <tr> aq eu vou ta comecando a linha dois
+            <th>coluna 1 da linha 2 da tabela</th>
+        </tr>
+    </table> ->fecha tabela
+-->
+
+<!-- TAGS DE LISTA:
+    <ul> = lista desordenada
+        -ex: <ul>
+                <li> feijão </li>
+                <li> arroz </li>
+                <li> etc </>
+             </ul>
+    <ol> = lista ordenada
+        -ex: <ol>
+                <li> feijão </li>
+                <li> arroz </li>
+                <li> etc <li/>
+             </ol>
+-->
+
+<!-- TAG PARA COLOCAR UMA PÁGINA DENTRO DE OUTRA PAGINA HTML:
+    <iframe src="aq coloco o endereço da pagina" width="aqui coloco o tamanho da pagina" height="aq coloco a altura q quero para a pagina " title="o titulo que quero para essa pagina"< </iframe>
+        -> se quiser sem a borda:
+            <iframe style="border:none;" src="...></iframe>
+-->
+
+<!--TAGS DE FORMULÁRIO:
+        <form>
+            <input type="text">
+        </form>
+-->
